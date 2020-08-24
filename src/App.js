@@ -3,12 +3,16 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import FormSingle from './components/FormSingle';
 import FormMultiple from './components/FormMultiple';
+import FormValidation from './components/FormValidation';
 
 
 
 function App() {
   return (   
           <div>
+              <h3 className='text-center'>Form Validation Using Regular Expression</h3>
+              <FormValidation></FormValidation>
+              <hr></hr>
               <h3 className='text-center'>event.target.name and event.target.value</h3>
               <FormMultiple></FormMultiple>
               <hr></hr>
