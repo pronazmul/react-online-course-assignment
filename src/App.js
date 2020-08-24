@@ -5,6 +5,7 @@ import FormSingle from './components/FormSingle';
 import FormMultiple from './components/FormMultiple';
 import FormValidation from './components/FormValidation';
 import SelectOption from './components/SelectOption';
+import SelectOptionJson from './components/SelectOptionJson';
 
 
 
@@ -22,6 +23,9 @@ function App() {
               <hr></hr>
               <h3 className='text-center'>event.target.value</h3>
               <SelectOption></SelectOption>
+              <hr></hr>
+              <h3 className='text-center'>Select Option From json.map</h3>
+              <SelectOptionJson></SelectOptionJson>
           </div>
    )
 }
