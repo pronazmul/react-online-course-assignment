@@ -1,19 +1,19 @@
 import React from 'react';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import Form from './components/Form';
-import Form2 from './components/Form2';
+import FormSingle from './components/FormSingle';
+import FormMultiple from './components/FormMultiple';
 
 
 
 function App() {
   return (   
           <div>
-              <h3 className='text-center'>Get Date event.target.name</h3>
-              <Form2></Form2>
+              <h3 className='text-center'>event.target.name and event.target.value</h3>
+              <FormMultiple></FormMultiple>
               <hr></hr>
-              <h3 className='text-center'>Get Date event.target.value</h3>
-              <Form></Form>
+              <h3 className='text-center'>event.target.value</h3>
+              <FormSingle></FormSingle>
           </div>
    )
 }
