@@ -9,7 +9,8 @@ class FormMultiple extends Component {
             name:" ",
             email:" ",
             mobile:" ",
-            address:" "
+            address:" ",
+            message:" "
         }
     }
 
@@ -36,11 +37,13 @@ class FormMultiple extends Component {
                         <p className='lead'>Your Email: {this.state.email}</p>
                         <p className='lead'>Your Phone No: {this.state.mobile}</p>
                         <p className='lead'>Your Address: {this.state.address}</p>
+                        <p className='lead'>Your Message: {this.state.message}</p>
                     <form>
                         <input name='name' placeholder='Enter Name' onChange={this.onChangeHandle} className='form-control mt-1' type="text"/>
                         <input name='email' placeholder='Enter email' onChange={this.onChangeHandle} className='form-control mt-1' type="text"/>
                         <input name='mobile' placeholder='Enter mobile no' onChange={this.onChangeHandle} className='form-control mt-1' type="text"/>
                         <input name='address' placeholder='Enter address' onChange={this.onChangeHandle} className='form-control mt-1' type="text"/>
+                        <textarea name="message" placeholder='Type your message Here' onChange={this.onChangeHandle} className='form-control mt-1'></textarea>
                         <input className = 'btn btn-info btn-block mt-4' type='submit' value='Submit'></input>
                     </form>
                     </div>
