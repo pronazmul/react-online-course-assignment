@@ -12,7 +12,18 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.bg-color{
+  background-color: #18154C;
+}
+.text-color1{
+  color: #18154C;
+}
+.card-bg{
+  background-color: #EEF8F4;
+}
+.text-color{
+  color: #50B9A6;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
