@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import DemoCourse from '../../DemoCourse'
 import Banner from '../Banner/Banner';
-import { hydrate } from 'react-dom';
 import CourseCard from '../CourseCard/CourseCard';
 import Cart from '../Cart/Cart';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Course = () => {
 
@@ -29,10 +30,10 @@ const Course = () => {
                             <h2 className='text-color text-center font-weight-bold'>Cart</h2><br></br>
                             <ul className='list-group'>
                                 {
-                                    cart.map(course=> <Cart course={course}></Cart>)
+                                    cart.map(course=> <Cart key={course.title} course={course}></Cart>)
                                 }
                             </ul>
-                            <h4 className='text-center card-bg py-2 rounded mt-3'> Check Out: $ {totalPrice} </h4>
+                            <h4 className='text-center card-bg py-2 rounded mt-3'><FontAwesomeIcon icon={faShoppingCart}/> Check Out: ${totalPrice} </h4>
                         </div>
                     </div>
                 </div>

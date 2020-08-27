@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSmile } from '@fortawesome/free-solid-svg-icons'
 
 const CourseCard = (props) => {
     const {title, instructor, price, ratting, image } = props.course
@@ -14,7 +16,7 @@ const CourseCard = (props) => {
                                 <div className="col-md-6 font-weight-boldm-0">$ {price}</div>
                                 <div className="col-md-6 font-weight-bold m-0"><span className='bg-warning rounded'>{ratting}</span></div>
                             </div>
-                            <button onClick={()=>props.mannageCart(props.course)} className='btn btn-success rounded d-block mx-auto mt-4'>Enroll Course</button>
+                            <button onClick={()=>props.mannageCart(props.course)} className='btn btn-success rounded d-block mx-auto mt-4'><FontAwesomeIcon icon={faSmile}/> Enroll Course</button>
                         </div>
                     </div>           
                 </div>
